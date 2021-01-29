@@ -1,0 +1,62 @@
+body{
+    color: #110273;
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    float: left;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+nav a{
+    margin-left: 50px;
+    border: 3px solid #110273;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.container{
+    clear: left;
+}
+
+/*Clases*/
+
+.tipo{
+    color: white;
+    background-color: #110273;
+    border-radius: 5px;
+}
+
+.dato{
+    color: #110273;
+    border: 1px solid #110273;
+    border-radius: 5px;
+}
+
+#boton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo{
+    margin: 15px 50px 0px 15px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
