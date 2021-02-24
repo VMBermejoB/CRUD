@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registro</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+    <header>
+        <div class="row">
+            <div class="mx-auto col-md-4 col-sm-12">
+                <img class="mx-auto d-block" src="mozilla.jpg" >
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                <h1>Propiedad Intelectual</h1>
+            </div>
+
+            <div class="mx-auto col-md-4 col-sm-12">
+                <button id="inicio">Iniciar sesión</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="row">
+            <div class="col-auto" >
+                <a href="../CrearEditar/crear.html">Crear Objeto</a>
+            </div>
+            <div class="col-auto" >
+                <a href="../Listar/Listar.html">Listar Objetos</a>
+            </div>
+            <div class="col-auto" >
+                <a href="#">Borrar BD</a>
+            </div>
+        </div>
+
+    </nav>
+        <div id="formulario">
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <form action="#">
+                <fieldset>
+                    <label for="nombre">Nombre:</label></br>
+                    <input type="text" id="nombre" placeholder="Nombre"></br></br>
+                    <label for="apellidos">Apellidos:</label></br>
+                    <input type="text" id="apellidos" placeholder="Apellidos"></br></br>
+                    <label for="fecha">Fecha de nacimiento:</label></br>
+                    <input type="date" id="fecha" value="2021-01-01" min="1900-01-01" max="2030-01-01"></br></br>
+                    <label for="password">Contraseña:</label></br>
+                    <input type="password" id="password" placeholder="Contraseña"></br></br>
+                    <label for="correo">Correo Electrónico:</label></br>
+                    <input type="email" id="correo" placeholder="Correo Electrónico"></br></br>
+                    <input type="submit" value="Registrarme" id="registro">
+                </fieldset>
+            </form>
+        </div>
+    <div id="cookies" class="row">
+
+        En Mozilla nos preocupamos por su privacidad
+        Nosotros y nuestros socios utilizamos cookies e identificadores para almacenar y acceder a información en tu
+        dispositivo y recabar datos personales sobre la audiencia, desarrollar y mejorar productos así como servir y medir
+        anuncios y/o contenido personalizados basándonos en tu navegación (por ejemplo páginas visitadas). Con tu permiso,
+        podemos utilizar datos de localización geográfica precisa e identificación mediante las características del
+        dispositivo. Algunas compañías requieren de tu consentimiento y otras se basan en el interés legítimo, pero
+        podrás oponerte a dicho tratamiento. Además de los propósitos anteriores, pedimos tu consentimiento para compartir
+        los perfiles obtenidos a partir de tu navegación entre las empresas del Grupo Mozilla para mostrarte publicidad
+        personalizada. Puedes aceptar o rechazar/configurar el uso de cookies para esta web o aplicación en el botón
+        correspondiente. Podrás modificar tu elección en Configuración de privacidad / Cookies. Más info
+        <a href="../privacidad/cookies.html">Política de Cookies</a>
+        <br>
+        <button id="botonCookie" onclick="crearCookie()">Permitir</button>
+
+    </div>
+    <footer>
+        <div>
+            Visita la empresa matriz sin ánimo de lucro de la Mozilla Corporation, la Mozilla Foundation.
+        </div>
+        <div>
+            Algunos contenidos están protegidos por los derechos de autor ©2019–2021 de determinados colaboradores en mozilla.org. El resto de contenidos está disponible bajo una licencia
+            Creative Commons.
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <a href="../privacidad/lopd.html">LOPD</a>
+            </div>
+            <div class="col-3">
+                <a href="../privacidad/cookies.html">Cookies</a>
+            </div>
+            <div class="col-3">
+                <a href="../privacidad/propIntelectual.html">Propiedad Intelectual</a>
+            </div>
+            <div class="col-3">
+                <a href="../privacidad/lssice.html">LSSICE</a>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+</html>
+<script>
+    function crearCookie(){
+        document.cookie = "cookie1=cookie creada; expires=FRI, 31 DEC 2021 00:00:00 UTC ;";
+        document.getElementById("cookies").style.display='none';
+    }
+
+    function comprobarCookie(){
+        var cookie=document.cookie;
+
+        if(cookie!=''){
+            document.getElementById("cookies").style.display='none';
+        }
+        else
+        {
+            document.getElementById("cookies").style.display='block';
+        }
+    }
+</script>
